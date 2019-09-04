@@ -1,8 +1,35 @@
 
-1
-90
-3
-4
+package com.genpact.strings;
 
-5
-6
+public class StringBufferDemo {
+	
+	public static void main(String args[]) {
+		
+		StringBuffer sb = new StringBuffer("Hello");
+		System.out.println(sb.capacity());
+		sb.append("world");
+		System.out.println(sb);
+		System.out.println(sb.length());
+		sb.insert(5,"Hi");
+		System.out.println(sb);
+		sb.delete(3,6);
+		System.out.println(sb);
+		//delete, capacity,insert,replace,reverse,length,charAt,
+		
+		sb.reverse();
+		System.out.println(sb);
+		
+		
+		String s="HelloIndia"; 
+		StringBuffer sub = new StringBuffer(s);
+		sub.replace(0,5,"Hi");
+		System.out.println(sub);
+		
+		
+		String z=sub.toString();
+		System.out.println(z);
+		
+	}
+
+}
+
